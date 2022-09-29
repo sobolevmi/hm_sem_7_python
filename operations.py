@@ -1,6 +1,7 @@
 import logger
 
 def addition():
+    """Функция по сложению введенных чисел"""
     size = str(input("Сколько чисел вы хотите сложить? "))
     while size.isdigit() == False:
         size = input("Необходимо ввести число. Попробуйте снова: ")
@@ -28,6 +29,7 @@ def addition():
                 logger.log_message("critical")
 
 def subtraction():
+    """Функция по вычитанию введенных чисел"""
     size = str(input("Введите количество чисел, участвующих в вычитании: "))
     while size.isdigit() == False:
         size = input("Необходимо ввести число. Попробуйте снова: ")
@@ -55,6 +57,7 @@ def subtraction():
                 logger.log_message("critical")
 
 def mult():
+    """Функция по умножению введенных чисел"""
     size = str(input("Сколько чисел вы хотите умножить? "))
     while size.isdigit() == False:
         size = input("Необходимо ввести число. Попробуйте снова: ")
@@ -82,6 +85,7 @@ def mult():
                 logger.log_message("critical")
 
 def div():
+    """Функция по делению введенных чисел"""
     size = str(input("Сколько чисел вы хотите разделить? "))
     while size.isdigit() == False:
         size = input("Необходимо ввести число. Попробуйте снова: ")
